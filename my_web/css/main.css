@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0 1%;
+    background-color: aquamarine;
+}
+
+
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    height: 100px;
+    background-color: bisque;
+}
+ul{
+    list-style-type: none;
+}
+.left-header{
+    float: left;
+}
+.right-header{
+    float: right;
+}
+.header ul{
+    margin: 40px 0;
+    height: 20px;
+}
+.left-header li{
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 20px;
+    margin: 0 10px;
+}
+.box222 a{
+    height: 0;
+}
+.right-header li{
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 20px;
+    margin: 0 10px;
+}
+.li-a{
+    line-height: 20px;
+    font-size: 14px;
+    color: #0e0e0e;
+}
+.box222{
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 800;
+    visibility: hidden;
+    /* background-color: black; */
+}
+.images{
+    width: 100%;
+}
+.header ul li a:hover{
+    color: blue;
+}
+.content{
+    height: 800px;
+    background-color: green;
+}
+.box{
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+form{
+    position: relative;
+    display: block;
+}
+textarea{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: block;
+    top: 50px;
+    left: 100px;
+    border: 1px solid #0e0e0e;
+    font-size: 20px;
+    font-family: "Courier New",monospace;
+}
+.answer textarea{
+    width: 1600px;
+    left: 50%;
+    margin-left: -800px;
+}
+button{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    display: block;
+    top: 500px;
+    left: 250px;
+}
+.answer{
+    height: 800px;
+    background-color: pink;
+}
+
+.flex{
+    display:flex;
+}
+
+.flex li{
+    margin:0 5px;
+}
+.wrap.flex{
+justify-content: space-between;
+width: 100%
+
+    max-width: 500px;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="header">
+    <div class="wrap flex" >
+        <ul class="flex">
+            <li><a href="#">111</a></li>
+            <li>
+                <a href="javascript:;" class="li-a" id="test">
+                    222
+                </a>
+                <div class="box222">
+                    <a href="./about/about.html" target="_blank">
+                        <img class="images" src="./images/aaa.png" alt="">
+                    </a>
+                </div>
+            </li>
+            <li><a href="#">333</a></li>
+            <li><a href="#">444</a></li>
+            <li><a href="#">555</a></li>
+            <li><a href="#">666</a></li>
+        </ul>
+        <ul class="flex">
+            <li><a href="#inputdata">777</a></li>
+            <li><a>888</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="box">
+        <form action="">
+            <textarea id="inputdata"></textarea>
+            <button type="button"  id="button">SUBMIT</button>
+            <button type="button"  id="button1">SUBMIT</button>
+        </form>
+    </div>
+</div>
+<div class="answer">
+    <div class="box">
+        <form>
+            <textarea id="outputdata" disabled></textarea>
+        </form>
+    </div>
+</div>
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+button1
+var aa=function(){
+        var inputs = document.querySelector("#inputdata").value;
+        var lines = inputs.split("\n");
+        var n = Number(lines[0].split(" ").slice(0,1));
+        var ans = new Array();
+        for(j=0; j < n; j++){
+        ans[j]=new Array();
+        for(k=0; k < n; k++){
+            ans[j][k] = "-";
+        }
+        }
+        for(i=1;i<lines.length;i++){
+            if(lines[i]==""){
+                continue;
+            }
+            var w = Number(lines[i].split(" ").slice(0,1));
+            var f = Number(lines[i].split(" ").slice(-1));
+            ans[w-1][f-1]="o";
+            ans[f-1][w-1]="x";
+            
+        }
+        for(l=0;l<n;l++){
+            var str = ans[l].toString().replace(/\,/g," ")+"\n";
+            console.log(str);
+            document.getElementById("outputdata").insertAdjacentHTML('beforeend',str);
+        }
+    }
+
+document.getElementById("#button").onclick=aa;
+document.getElementById("#button1").onclick=aa;
+
+
+    $(".left-header li").each((index,element) => {
+        
+        let tar= $(element).find('.box222').length
+        console.log(tar)
+        if(tar){
+            $(element).mouseenter(()=>{
+                $('.box222').css("visibility" , "visible");
+            })
+            $(element).mouseleave(()=>{
+                $('.box222').css("visibility" , "hidden");
+            })
+        }
+ 
+    });
+    // $(".left-header li : has(.box222)").mouseenter(()=>{
+    //             $('.box222').css("visibility" , "visible");
+    // });
+    // $(".left-header li : has(.box222)").mouseleave(()=>{
+    //             $('.box222').css("visibility" , "hidden");
+    // });
+    var i = 0;
+</script>
+</html>
