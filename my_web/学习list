@@ -1,0 +1,45 @@
+1.var let const区别
+数组 json object
+
+2.浮点精度
+
+3.数组操作常用函数 
+
+4.ES6 class function
+
+5.js监听浏览器加载事件
+
+6.xhr
+
+7.js网络请求的几种方式
+响应头 请求头
+
+8.url
+
+9.编程思想： 面向过程编程，面向对象编程。编程的 设计模式
+
+10。前后端分离。单页面（SPA）。后端渲染（SSR(PHP)）。
+	前端js框架：vue，react （react native做移动的），angular。 jquery（渐渐的消失了）
+	前端vue-UI框架：elementui。vuetify。naiveUI
+
+
+编程语言的分类：强类型语言 或弱类型语言；编译语言，脚本语言。
+
+强类型语言：java， C#
+弱类型：js PHP python
+
+编译： java c#，
+脚本：js PHP python
+
+
+11。js和nodejs区别。
+
+GIT 阮一峰
+
+上 github 自己开个代码 仓库
+
+1.stack overflow
+
+
+
+
